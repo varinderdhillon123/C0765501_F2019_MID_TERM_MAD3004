@@ -19,5 +19,11 @@ class Internet: Bill
         self.net_usage = net_usage
     }
     
-  
+    override func display()
+    {
+        super.display()
+        print("Provider Name = \(provider_name!)")
+        print("Internet GB Used = \(net_usage.minutes())")
+    }
+    
 }
