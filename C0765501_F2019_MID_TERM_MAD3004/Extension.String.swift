@@ -7,10 +7,15 @@
 //
 
 import Foundation
-Extension String
+extension String
 {
     func GB() -> String
     {
         return "\(self) GB"
+    }
+    
+  func Units() -> String
+  {
+    return "\(self) units"
     }
 }
