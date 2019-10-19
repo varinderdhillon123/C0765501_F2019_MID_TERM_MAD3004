@@ -24,6 +24,6 @@ class Hydro:Bill
     {
         super.display()
         print("AGENCY NAME = \(agency_name!)")
-        print("UNITS CONSUMED = \(Units_Consumed!)")
+        print("UNITS CONSUMED = \(Units_Consumed!.units())")
     }
 }
