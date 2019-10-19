@@ -7,3 +7,11 @@
 //
 
 import Foundation
+class Internet: Bill
+{
+    var provider_name : String?
+    var net_usage = Int()
+    
+   
+    
+}
