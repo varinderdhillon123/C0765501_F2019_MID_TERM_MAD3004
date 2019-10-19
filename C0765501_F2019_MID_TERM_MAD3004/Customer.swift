@@ -33,5 +33,16 @@ var Cus_fullname: String?
     {
         bill_dict.updateValue(b_object, forKey: b_object.BillId)
     }
+    func Calculate_total()-> Float
+    {
+        var x: Float = 0
+        for a in bill_dict.values
+        {
+            x+=a.Totalamount
+        }
+        return x
+    }
+    
+    
     
 }
