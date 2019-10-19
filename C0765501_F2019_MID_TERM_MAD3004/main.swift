@@ -8,10 +8,11 @@
 
 import Foundation
 
-var cus1 = (Cus_Id: 1 , Cus_fname:"Charanpreet" , Cus_lname:"Kaur" , Cus_email: "charanpreetkaur026@gmail.com")
+var cus1 = Customer(Cus_Id: 1 , Cus_fname:"Charanpreet" , Cus_lname:"Kaur" , Cus_email: "charanpreetkaur026@gmail.com")
 var cus2 = (Cus_Id: 2 , Cus_fname:"Komaldeep" , Cus_lname:"Kaur" , Cus_email: "komaldeepkr99@gmail.com")
 var cus3 = (Cus_Id: 3 , Cus_fname:"Harmanpreet" , Cus_lname:"Singh" , Cus_email: "fmsharman24@gmail.com")
 var cus4 = (Cus_Id: 4 , Cus_fname:"Simranjit" , Cus_lname:"Singh" , Cus_email: "simranjitsingh1998@gmail.com")
 
+var Hydro1 = Hydro(BillId: 001, BillDate: <#String#>, BillDate: , BillType: .Hydro, agency_name: "Water Canada", Units_Consumed: 80)
 
-
+var Hydro2 = Hydro(BillId: 002, BillDate: <#String#>, BillDate: , BillType: .Hydro, agency_name: "Hydro One", Units_Consumed: 180)
