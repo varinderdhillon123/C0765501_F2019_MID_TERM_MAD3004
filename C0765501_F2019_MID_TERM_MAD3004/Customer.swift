@@ -17,17 +17,21 @@ var Cus_fullname: String?
     return Cus_fname!+" "+Cus_lname!
     
 }
-var Cus_email: String?
-var bill_dict = [Int:Bill]()
-var Totalamount: Float?
-
-init ( Cus_Id: Int, Cus_fname: String, Cus_lname: String , Cus_email: String )
-{
-    self.Cus_Id = Cus_Id
-    self.Cus_fname = Cus_fname
-    self.Cus_lname = Cus_lname
-   self.Cus_email = Cus_email
-}
+    var Cus_email: String?
+    var bill_dict = [Int:Bill]()
+    var Totalamount: Float?
     
+    init ( Cus_Id: Int, Cus_fname: String, Cus_lname: String , Cus_email: String )
+    {
+        self.Cus_Id = Cus_Id
+        self.Cus_fname = Cus_fname
+        self.Cus_lname = Cus_lname
+        self.Cus_email = Cus_email
+    }
+    
+    func add_bill(b_object: Bill)
+    {
+        bill_dict.updateValue(b_object, forKey: b_object.BillId)
+    }
     
 }
