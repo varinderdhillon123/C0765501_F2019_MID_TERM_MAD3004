@@ -11,4 +11,14 @@ class Hydro:Bill
 {
     var agency_name: String?
     var Units_Consumed: Int?
+    
+    
+    init(BillId: Int , BillDate: String , BillType: Float , agency_name: String , Units_Consumed: Int)
+    {
+        super.init(BillId: <#T##Int#>, BillDate: <#T##String#>, Billtype: <#T##Bill.Types#>, Totalamount: <#T##Float#>)
+        self.agency_name = agency_name
+        self.Units_Consumed = Units_Consumed
+    }
+    
+    
 }
