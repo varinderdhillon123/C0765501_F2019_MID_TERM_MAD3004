@@ -18,4 +18,9 @@ extension String
   {
     return "\(self) units"
     }
+    
+    func Minutes() -> String
+    {
+        return "\(self) minutes"
+    }
 }
