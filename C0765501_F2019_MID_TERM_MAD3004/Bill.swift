@@ -7,17 +7,31 @@
 //
 
 import Foundation
-class Bill: IDisplay
+class Bill
 {
     var BillId = Int()
     var BillDate = String()
-    var BilType : Types
+    var BillType : Types
     enum Types
     {
         case Internet
         case Hydro
         case Mobile
     }
-  
+  var Totalamount = Float()
+    init( BillId : Int , BillDate : String , Billtype : Types , Totalamount : Float)
+        {
+        self.BillId = BillId
+            self.BillDate = BillDate
+            self.BillType = Billtype
+            self.Totalamount = Totalamount
+        }
     
+    func display()
+    {
+        print("Bill ID = \(BillId)")
+        print("Bill Date = \(BillDate)")
+        print("Bill Type = \(BillType)")
+        print("Total Bill = \(Totalamount)")
+    }
 }
