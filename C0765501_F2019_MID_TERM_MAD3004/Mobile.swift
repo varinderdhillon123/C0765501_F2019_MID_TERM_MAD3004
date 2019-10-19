@@ -7,3 +7,12 @@
 //
 
 import Foundation
+class Mobile: Bill
+{
+    var mobile_manufacturer: String?
+    var plan_name: String?
+    var mobile_num: Int?
+    var net_used: Int?
+    var min_used: Int?
+    
+}
