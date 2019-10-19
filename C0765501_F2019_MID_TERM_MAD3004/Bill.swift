@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Bill
+class Bill: IDisplay
 {
     var BillId = Int()
     var BillDate = String()
