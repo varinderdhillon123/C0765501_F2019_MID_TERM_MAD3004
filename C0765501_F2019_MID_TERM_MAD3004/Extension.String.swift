@@ -7,3 +7,10 @@
 //
 
 import Foundation
+Extension String
+{
+    func GB() -> String
+    {
+        return "\(self) GB"
+    }
+}
