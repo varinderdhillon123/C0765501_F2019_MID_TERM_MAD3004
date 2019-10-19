@@ -14,9 +14,9 @@ class Bill: IDisplay
     var BillType : Types
     enum Types
     {
-        case Internet
-        case Hydro
-        case Mobile
+        case internet
+        case hydro
+        case mobile
     }
   var Totalamount = Float()
     init( BillId : Int , BillDate : String , Billtype : Types , Totalamount : Float)
