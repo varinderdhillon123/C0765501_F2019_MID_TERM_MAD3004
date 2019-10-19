@@ -20,5 +20,10 @@ class Hydro:Bill
         self.Units_Consumed = Units_Consumed
     }
     
-    
+    override func display()
+    {
+        super.display()
+        print("AGENCY NAME = \(agency_name!)")
+        print("UNITS CONSUMED = \(Units_Consumed!)")
+    }
 }
