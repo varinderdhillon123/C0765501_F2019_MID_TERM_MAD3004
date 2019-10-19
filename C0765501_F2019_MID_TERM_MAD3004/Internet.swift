@@ -26,4 +26,5 @@ class Internet: Bill
         print("Internet GB Used = \(net_usage.minutes())")
     }
     
+
 }
