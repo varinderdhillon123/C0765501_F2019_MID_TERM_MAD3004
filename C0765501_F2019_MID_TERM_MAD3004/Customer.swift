@@ -44,5 +44,27 @@ var Cus_fullname: String?
     }
     
     
-    
+    func display()
+    {
+        print("Customer ID = \(Cus_Id!)")
+        print("Customer fname = \(Cus_fname!)")
+        print("Customer fullname = \(Cus_fullname!)")
+        print("Customer Email = \(Cus_email!)")
+        print("  -------Bill Information-------")
+        
+        if bill_dict .isEmpty
+        {
+            print("No bill to display")
+            
+        }
+        else{
+            for i in bill_dict.values
+            {
+                i.display()
+                print("**********************************************************")
+            }
+        }
+        print("Total Bill Amount : \(Calculate_total().add_currency())")
+    }
+
 }
