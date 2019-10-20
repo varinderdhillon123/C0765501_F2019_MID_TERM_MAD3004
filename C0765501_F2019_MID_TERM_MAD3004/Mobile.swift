@@ -15,9 +15,9 @@ class Mobile: Bill
     var net_used: Int?
     var min_used: Int?
     
-    init(BillId: Int , BillDate: String , BillType: Types , Totalamount: Float, mobile_manufacturer: String , plan_name: String , mobile_name: Int , net_used: Int , min_used: Int)
+    init(BillId: Int , BillDate: String , BillType: Types , mobile_manufacturer: String , plan_name: String , mobile_num: Int , net_used: Int , min_used: Int)
     {
-        super.init(BillId: BillId, BillDate: BillDate, Billtype: BillType, Totalamount: Totalamount)
+        super.init(BillId: BillId, BillDate: BillDate, Billtype: BillType)
         self.mobile_manufacturer = mobile_manufacturer
         self.plan_name = plan_name
         self.mobile_num = mobile_num

@@ -22,12 +22,12 @@ class Bill: IDisplay
     
 
   var Totalamount = Float()
-    init( BillId : Int , BillDate : String , Billtype : Types , Totalamount : Float)
+    init( BillId : Int , BillDate : String , Billtype : Types )
         {
         self.BillId = BillId
             self.BillDate = BillDate
             self.BillType = Billtype
-            self.Totalamount = Totalamount
+            
         }
     
     func display()

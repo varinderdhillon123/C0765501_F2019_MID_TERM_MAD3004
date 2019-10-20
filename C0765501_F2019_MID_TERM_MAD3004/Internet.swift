@@ -14,9 +14,10 @@ class Internet: Bill
     
     init(BillId: Int , BillDate: String , BillType: Types , provider_name: String , net_usage: Int)
     {
-        super.init(BillId: BillId, BillDate: BillDate, Billtype: BillType, Totalamount: Totalamount)
+       
         self.provider_name = provider_name
         self.net_usage = net_usage
+         super.init(BillId: BillId, BillDate: BillDate, Billtype: BillType)
     }
     
     override func display()
