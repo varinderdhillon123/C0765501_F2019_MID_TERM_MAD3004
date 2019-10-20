@@ -7,7 +7,7 @@
 //
 
 import Foundation
-extension String
+extension Int
 {
     func GB() -> String
     {

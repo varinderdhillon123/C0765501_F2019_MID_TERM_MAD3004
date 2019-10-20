@@ -12,12 +12,15 @@ class Bill: IDisplay
     var BillId = Int()
     var BillDate = String()
     var BillType : Types
+
     enum Types
     {
-        case internet
-        case hydro
-        case mobile
+        case Internet
+        case Hydro
+        case Mobile
     }
+    
+
   var Totalamount = Float()
     init( BillId : Int , BillDate : String , Billtype : Types , Totalamount : Float)
         {

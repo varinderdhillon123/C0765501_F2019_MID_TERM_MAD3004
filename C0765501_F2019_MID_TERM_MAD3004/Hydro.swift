@@ -13,9 +13,9 @@ class Hydro:Bill
     var Units_Consumed: Int?
     
     
-    init(BillId: Int , BillDate: String , BillType: Float , agency_name: String , Units_Consumed: Int)
+    init(BillId: Int , BillDate: String , BillType: Types , agency_name: String , Units_Consumed: Int)
     {
-        super.init(BillId: <#T##Int#>, BillDate: <#T##String#>, Billtype: <#T##Bill.Types#>, Totalamount: <#T##Float#>)
+        super.init(BillId: BillId, BillDate: BillDate, Billtype: BillType, Totalamount: Totalamount)
         self.agency_name = agency_name
         self.Units_Consumed = Units_Consumed
     }
@@ -24,6 +24,6 @@ class Hydro:Bill
     {
         super.display()
         print("AGENCY NAME = \(agency_name!)")
-        print("UNITS CONSUMED = \(Units_Consumed!.units())")
+        print("UNITS CONSUMED = \(Units_Consumed!.Units())")
     }
 }
